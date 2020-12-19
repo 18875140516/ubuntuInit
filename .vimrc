@@ -36,7 +36,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'mg979/vim-visual-multi'
 Plugin 'preservim/nerdtree'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-
+Plugin 'connorholyday/vim-snazzy'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -56,5 +56,6 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+colorscheme snazzy
 filetype plugin indent on    " required
 autocmd vimenter * NERDTree | wincmd p
