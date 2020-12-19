@@ -1,5 +1,7 @@
 sudo cp .zshrc ~/
 sudo cp .vimrc ~/
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo cp ./sources.list /etc/apt/sources.list
 sudo chmod a+w /etc/hosts
 echo 199.232.96.133  raw.github.com >> /etc/hosts
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -9,7 +11,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 sudo add-apt-repository ppa:jonathonf/vim 
 sudo add-apt-repository ppa:lazygit-team/release
 sudo apt update
-sudo apt-get install zsh vim lazygit
+sudo apt-get install zsh vim lazygit tmux
 curl -sL install-node.now.sh/lts | sudo bash
 curl -L -k  https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sudo sh
 vim +PluginInstall +qall
